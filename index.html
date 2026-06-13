@@ -887,5 +887,15 @@
             document.querySelectorAll('[id^="switch-game-"]').forEach(b=>b.addEventListener('click',()=>switchPage('home-page')));
         });
     </script>
+    <script src="./question-bank-extra.js"></script>
+    <script>
+        if (window.extraQuestionBank) {
+            punishList.push(...window.extraQuestionBank.punish);
+            truthList.push(...window.extraQuestionBank.truth);
+            dareList.push(...window.extraQuestionBank.dare);
+            drinkList.push(...window.extraQuestionBank.drink);
+            kingCommandList.push(...window.extraQuestionBank.king);
+        }
+    </script>
 </body>
 </html>
